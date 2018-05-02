@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
     <title>Version</title>
 </head>
+
 <body>
-    <h1>Version control</h1>
+    <div>
+        <div class="main1">
+            <h2>HTML FORM ELEMENTS</h2>
+            <hr>
+            <form>
+                First name:
+                <input type="text" name="firstname"required>
+                </br>
+                Last name:
+                <input type="text" name="lastname"required autofocus>
+                </br>
+                Password
+                <input type="text" name="password"required></br>
+                Email
+                <input type="email" name="email"required></br>
+
+                <input type="color"></br>
+                <input type="date"autofocus></br>
+
+                <input type="radio" name="gender" value="male" checked>Male</br>
+                <input type="radio" name="gender" value="female" checked>Female</br>
+                <input type="radio" name="gender" value="other" checked>Other</br>
+
+                <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea><br>
+
+
+                <select name="cars" size="2" multiple>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi"selected>Audi</option>
+                </select><br>
+
+
+                <input type="submit" value="Submit"><br>
+                
+                <input list="browsers">
+                <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+                </datalist>
+            </form>
+
+            <form oninput="result.value=parseInt(firstValue.value) + parseInt(secondValue.value)">
+                <input type="number" name="firstValue">
+                +
+                <input type="number" name="secondValue">
+                =
+                <output name="result"></output>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>
